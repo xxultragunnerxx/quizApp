@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kawasaki Quiz App</title>
+    <link href="greybox.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <section id="intro">
+      <h1>2017 Kawasaki Ninja 650 Quiz</h1>
+      <strong>Would you like to play a game?</strong>
+      <input type="submit" value="Take Quiz!">
+    </section>
+    <section id="question">
+      <h2>Question 1</h2>
+      <strong>What size is the rear tire on the Ninja?</strong>
+      <form class="question" action="index.html" method="post">
+        <ul>
+          <li><input type="radio" name="answers" value="correct">160/60r17</li>
+          <li><input type="radio" name="answers" value="wrong">170/60r17</li>
+          <li><input type="radio" name="answers" value="wrong">185/55r17</li>
+          <li><input type="radio" name="answers" value="wrong">190/55r17</li>
+        </ul>
+        <input type="submit" value="Submit Answer">
+        <!-- use javascript to have a tracker displayed underneath showing the current auestion number out of 5, and current number of questions answered correctly -->
+      </form>
+    </section>
+    <section id="question-interaction">
+      <h2>Congrats!</h2>
+      <div class="correctAnswer">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton">X</div>
+        <p>Wow! Looks like you know your stuff!</p>
+        <!-- javascript used to display the correct answer -->
+        <input type="submit" value="next question">
+    </div>
+</div>
+    </section>
+    <section id="question-interaction-wrong">
+      <h2>Uh-oh...</h2>
+      <div class="wrongAnswer">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton">X</div>
+        <p>Ouch! <br/> Looks like you got this one wrong...</p>
+        <!-- javascript used to insert the selected and correct answers onto the page-->
+        <input type="submit" value="next question">
+    </div>
+</div>
+    </section>
+    <section id="final">
+      <h2>Congrats on your quiz score!</h2>
+      <!-- link score here -->
+      <p>would you like to take the quiz again?</p>
+      <input type="submit" value="Retake Quiz">
+
+    </section>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="greybox.js"></script>
+  </body>
+</html>
