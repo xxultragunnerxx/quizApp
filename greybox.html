@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -25,27 +25,37 @@
         <input type="submit" value="Submit Answer">
         <!-- use javascript to have a tracker displayed underneath showing the current auestion number out of 5, and current number of questions answered correctly -->
       </form>
+      <div class="current-score-question">
+        <!--these will be appended to the class current-score-question with concatenation  -->
+        <p>0/5 <!-- the left will be the score the right the current question -->1/5</p>
+      </div>
     </section>
     <section id="question-interaction">
+      <!-- this will be displayed as a pop up -->
       <h2>Congrats!</h2>
       <div class="correctAnswer">
     <span class="helper"></span>
     <div>
         <div class="popupCloseButton">X</div>
         <p>Wow! Looks like you know your stuff!</p>
-        <!-- javascript used to display the correct answer -->
+        <!-- javascript used to append the correct answer below with Concatenation -->
+        <<p>160/60r17 is the right answer!</p>
+
+        </div>
         <input type="submit" value="next question">
     </div>
 </div>
     </section>
     <section id="question-interaction-wrong">
+      <!-- this will be displayed as a pop up -->
       <h2>Uh-oh...</h2>
       <div class="wrongAnswer">
     <span class="helper"></span>
     <div>
         <div class="popupCloseButton">X</div>
         <p>Ouch! <br/> Looks like you got this one wrong...</p>
-        <!-- javascript used to insert the selected and correct answers onto the page-->
+        <!-- javascript used to append the wrong answer, and the correct answer below with Concatenation -->
+        <p>im sorry, 185/55r17 is incorrect, the correct answer is 160/60r17</p>
         <input type="submit" value="next question">
     </div>
 </div>
@@ -53,6 +63,9 @@
     <section id="final">
       <h2>Congrats on your quiz score!</h2>
       <!-- link score here -->
+      <div class="final-score">
+        <p>Your final score is 5/5</p>
+      </div>
       <p>would you like to take the quiz again?</p>
       <input type="submit" value="Retake Quiz">
 
