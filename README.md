@@ -1,2 +1,2 @@
 # quizApp
-a quiz app made for Thinkful checkpoint
+This quiz app was made for Thinkful
